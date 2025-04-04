@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html color-mode="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+       Shaan Subbaiah 
+    </title>
+    <script>
+      if (
+        localStorage.getItem("color-mode") === "dark" ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+          !localStorage.getItem("color-mode"))
+      ) {
+        document.documentElement.setAttribute("color-mode", "dark");
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/avatar.webp" />
+    <meta
+      name="description"
+      content="Shaan Subbaiah's portfolio website showcasing GitHub projects."
+    />
+    <script type="module" crossorigin src="/assets/index.b62803af.js"></script>
+    <link rel="stylesheet" href="/assets/index.8e0b01b9.css">
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Dark Mode Toggle  -->
+      <div class="color-mode-toggle">
+        <button
+          class="color-mode-btn light--hidden"
+          aria-label="Toggle light mode"
+        >
+          <svg class="icon-sun">
+            <use xlink:href="/svg/svg-defs.svg#sun" />
+          </svg>
+        </button>
+        <button
+          class="color-mode-btn dark--hidden"
+          aria-label="Toggle dark mode"
+        >
+          <svg class="icon-moon">
+            <use xlink:href="/svg/svg-defs.svg#moon" />
+          </svg>
+        </button>
+      </div>
+      <!-- 
+        Name Block
+        -->
+      <div id="name-block">
+         Shaan Subbaiah 
+      </div>
+      <!-- 
+        Navigation Block
+        -->
+      <div id="nav-block">
+        <span id="projects" class="nav-selected"> Projects </span>
+      </div>
+      <!-- 
+        Profile Block
+        -->
+      <div id="pf-img-container">
+        <img
+          id="pf-img-source"
+          src="/images/avatar.webp"
+          alt="Profile Avatar"
+        />
+        <img
+          id="pf-img-shadow"
+          src="/images/avatar.webp"
+          alt="Profile Avatar Shadow"
+        />
+      </div>
+      <div id="pf-info-container">
+
+        <div id="pf-info-links">
+          <!-- Github, Location, Company, LinkedIn, Twitter info goes here -->
+          <div id="pf-info-github">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="/svg/svg-defs.svg#github" />
+            </svg>
+            <a target="_blank" href="https://github.com/shaansubbaiah">
+              <span>shaansubbaiah</span>
+            </a>
+          </div>
+          <div id="pf-info-location">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="/svg/svg-defs.svg#map-pin" />
+            </svg>
+            <span>Bangalore, India</span>
+          </div>
+            
+          <div id="pf-info-linkedin">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="/svg/svg-defs.svg#linkedin" />
+            </svg>
+            <a target="_blank" href="https://www.linkedin.com/in/shaansubbaiah">
+              <span>Shaan Subbaiah</span>
+            </a>
+          </div>
+                     </div>
+      </div>
+      <!-- Repository Block -->
+      <div id="repo-block">
+
+        <div id="repo-grid" class="grid">
+          <!-- repository cards go here -->
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/Portfolio">
+                <span class="repo-title">
+ Portfolio
+                </span>
+                <span class="repo-desc">
+                   
+                  <img
+                    class="repo-socialprev-img"
+                    src="/images/Portfolio.webp"
+                    alt="Portfolio social preview image"
+                    width="320"
+                    height="160"
+                  />
+
+                     👤 Automatically generate and deploy a beautiful, responsive, static-site to display your GitHub projects.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>62</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>17</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Java</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/smallchange">
+                <span class="repo-title">
+ smallchange
+                </span>
+                <span class="repo-desc">
+                   
+                  <img
+                    class="repo-socialprev-img"
+                    src="/images/smallchange.webp"
+                    alt="smallchange social preview image"
+                    width="320"
+                    height="160"
+                  />
+
+                     📈 Full-stack trading app built using AngularJS + SpringBoot + OracleDB.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Python</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/bmsce-paper-ripper">
+                <span class="repo-title">
+ bmsce-paper-ripper
+                </span>
+                <span class="repo-desc">
+                      💀 Selenium script to rip previous year&#x27;s question papers from the e-library automatically in seconds.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>4</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Dart</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/Flashcards">
+                <span class="repo-title">
+ Flashcards
+                </span>
+                <span class="repo-desc">
+                   
+                  <img
+                    class="repo-socialprev-img"
+                    src="/images/Flashcards.webp"
+                    alt="Flashcards social preview image"
+                    width="320"
+                    height="160"
+                  />
+
+                     🧠 App to help remember and organize studying using Active Recall and Spaced Repetition. Built using Flutter and Firebase.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>19</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>6</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Python</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/allrecipes-scraper">
+                <span class="repo-title">
+ allrecipes-scraper
+                </span>
+                <span class="repo-desc">
+                      🥗 Scrapy spider to scrape recipe and nutritional data from allrecipes.com
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>10</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>2</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Vue</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/campusx-frontend">
+                <span class="repo-title">
+ campusx-frontend
+                </span>
+                <span class="repo-desc">
+                   
+                  <img
+                    class="repo-socialprev-img"
+                    src="/images/campusx-frontend.webp"
+                    alt="campusx-frontend social preview image"
+                    width="320"
+                    height="160"
+                  />
+
+                     📖  VueJS, Express, Minimal and Responsive. Platform to trade/donate books, notes, drafters, etc and share useful links. Consumes REST API at https://github.com/shaansubbaiah/campusx-backend
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>3</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Python</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/bmsce-auto-feedback">
+                <span class="repo-title">
+ bmsce-auto-feedback
+                </span>
+                <span class="repo-desc">
+                      🏃💨 For when you need to fill out feedback in the last minute.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>10</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Shell</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/powercontrol">
+                <span class="repo-title">
+ powercontrol
+                </span>
+                <span class="repo-desc">
+                      🔋 Shell script to control power and battery settings in Linux on the Lenovo IdeaPad 14ARE05, 15ARE05
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>8</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/CandyFloss">
+                <span class="repo-title">
+ CandyFloss
+                </span>
+                <span class="repo-desc">
+                      🍡 KDE Plasma - Pastel colored Kvantum theme, window decorations, Konsole and Firefox profiles.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>7</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/Nimbu">
+                <span class="repo-title">
+ Nimbu
+                </span>
+                <span class="repo-desc">
+                   
+                  <img
+                    class="repo-socialprev-img"
+                    src="/images/Nimbu.webp"
+                    alt="Nimbu social preview image"
+                    width="320"
+                    height="160"
+                  />
+
+                     🍋 Music bot for Discord that lets you stream or download audio. Features a command handler, queuing system and various playback commands.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>6</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>C++</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/CSE-2nd-Year-Labs">
+                <span class="repo-title">
+ CSE-2nd-Year-Labs
+                </span>
+                <span class="repo-desc">
+                      🖥️ 3rd and 4th Semester Lab Programs.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>4</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/campusx-backend">
+                <span class="repo-title">
+ campusx-backend
+                </span>
+                <span class="repo-desc">
+                      📕 REST API - ExpressJS, Sequelize (MYSQL2), JWT authentication. Platform to trade/donate books, notes, drafters, etc and share useful links. Serves frontend at https://github.com/shaansubbaiah/campusx-frontend
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>3</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Jupyter Notebook</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/CSE-3rd-Year-Labs">
+                <span class="repo-title">
+ CSE-3rd-Year-Labs
+                </span>
+                <span class="repo-desc">
+                      🖥️ 5th and 6th Semester Lab Programs.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>2</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>3</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/GitHubGraduation-2022">
+                <span class="repo-title">
+                  <svg class="icon-fork">
+                    <use xlink:href="/svg/svg-defs.svg#fork"></use>
+                  </svg>
+                   GitHubGraduation-2022
+                </span>
+                <span class="repo-desc">
+                      Join the GitHub Graduation Yearbook and &quot;walk the stage&quot; on June 11.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/kwin-cycle-non-empty-desktops">
+                <span class="repo-title">
+ kwin-cycle-non-empty-desktops
+                </span>
+                <span class="repo-desc">
+                      KWin Script to switch to the next or previous non empty virtual desktop. 500+ Downloads. https://store.kde.org/p/1700772
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>1</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="repo-lang">
+              <span>Python</span>
+            </div>
+            <div class="repo-about">
+              <a href="https://github.com/shaansubbaiah/Kitchenette">
+                <span class="repo-title">
+                  <svg class="icon-fork">
+                    <use xlink:href="/svg/svg-defs.svg#fork"></use>
+                  </svg>
+                   Kitchenette
+                </span>
+                <span class="repo-desc">
+                   
+                  <img
+                    class="repo-socialprev-img"
+                    src="/images/Kitchenette.webp"
+                    alt="Kitchenette social preview image"
+                    width="320"
+                    height="160"
+                  />
+
+                     🥗 Provides insight into the nutritional value of various recipes and recommends healthier alternatives.
+                </span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="/svg/svg-defs.svg#star" />
+              </svg>
+              <span>1</span>
+              <svg class="icon-fork">
+                <use xlink:href="/svg/svg-defs.svg#fork" />
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    
+    <!-- Built using Portfolio (https://github.com/shaansubbaiah/Portfolio) -->
+  </body>
+</html>
